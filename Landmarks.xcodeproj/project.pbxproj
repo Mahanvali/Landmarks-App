@@ -11,6 +11,14 @@
 		BAC214C52CB3C0E20066A370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214C42CB3C0E20066A370 /* ContentView.swift */; };
 		BAC214C72CB3C0FF0066A370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC214C62CB3C0FF0066A370 /* Assets.xcassets */; };
 		BAC214CA2CB3C0FF0066A370 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC214C92CB3C0FF0066A370 /* Preview Assets.xcassets */; };
+		BAC214D12CB3C5360066A370 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214D02CB3C5360066A370 /* CircleImage.swift */; };
+		BAC214D32CB3C7450066A370 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214D22CB3C7450066A370 /* MapView.swift */; };
+		BAC214D52CB521E60066A370 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = BAC214D42CB521E60066A370 /* landmarkData.json */; };
+		BAC214D72CB522110066A370 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214D62CB522110066A370 /* Landmark.swift */; };
+		BAC214D92CB522CA0066A370 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214D82CB522CA0066A370 /* ModelData.swift */; };
+		BAC214DE2CB5235A0066A370 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214DD2CB5235A0066A370 /* LandmarkRow.swift */; };
+		BAC214E02CB528EE0066A370 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214DF2CB528EE0066A370 /* LandmarkList.swift */; };
+		BAC214E22CB529FA0066A370 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC214E12CB529FA0066A370 /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		BAC214C42CB3C0E20066A370 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAC214C62CB3C0FF0066A370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAC214C92CB3C0FF0066A370 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAC214D02CB3C5360066A370 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		BAC214D22CB3C7450066A370 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BAC214D42CB521E60066A370 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		BAC214D62CB522110066A370 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		BAC214D82CB522CA0066A370 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		BAC214DD2CB5235A0066A370 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		BAC214DF2CB528EE0066A370 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		BAC214E12CB529FA0066A370 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				BAC214C22CB3C0E20066A370 /* LandmarksApp.swift */,
-				BAC214C42CB3C0E20066A370 /* ContentView.swift */,
+				BAC214DA2CB523040066A370 /* Views */,
+				BAC214DB2CB523290066A370 /* Model */,
+				BAC214DC2CB5233A0066A370 /* Resources */,
 				BAC214C62CB3C0FF0066A370 /* Assets.xcassets */,
 				BAC214C82CB3C0FF0066A370 /* Preview Content */,
 			);
@@ -65,6 +83,36 @@
 				BAC214C92CB3C0FF0066A370 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAC214DA2CB523040066A370 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAC214C42CB3C0E20066A370 /* ContentView.swift */,
+				BAC214D02CB3C5360066A370 /* CircleImage.swift */,
+				BAC214D22CB3C7450066A370 /* MapView.swift */,
+				BAC214DD2CB5235A0066A370 /* LandmarkRow.swift */,
+				BAC214E12CB529FA0066A370 /* LandmarkDetail.swift */,
+				BAC214DF2CB528EE0066A370 /* LandmarkList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAC214DB2CB523290066A370 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAC214D62CB522110066A370 /* Landmark.swift */,
+				BAC214D82CB522CA0066A370 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAC214DC2CB5233A0066A370 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAC214D42CB521E60066A370 /* landmarkData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,7 @@
 			files = (
 				BAC214CA2CB3C0FF0066A370 /* Preview Assets.xcassets in Resources */,
 				BAC214C72CB3C0FF0066A370 /* Assets.xcassets in Resources */,
+				BAC214D52CB521E60066A370 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +187,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC214C52CB3C0E20066A370 /* ContentView.swift in Sources */,
+				BAC214D32CB3C7450066A370 /* MapView.swift in Sources */,
 				BAC214C32CB3C0E20066A370 /* LandmarksApp.swift in Sources */,
+				BAC214E02CB528EE0066A370 /* LandmarkList.swift in Sources */,
+				BAC214E22CB529FA0066A370 /* LandmarkDetail.swift in Sources */,
+				BAC214D12CB3C5360066A370 /* CircleImage.swift in Sources */,
+				BAC214D72CB522110066A370 /* Landmark.swift in Sources */,
+				BAC214DE2CB5235A0066A370 /* LandmarkRow.swift in Sources */,
+				BAC214D92CB522CA0066A370 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
